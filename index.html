@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperaturas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myscripts.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Conversor de temperaturas</h1> <!--Título do Programa-->
+        <form action="#" method="post" id="formulario"> <!--Início do Formulário-->
+
+            <!--Defini a célula de Graus celsius-->   
+            <div>
+                <label for="celsius">Graus celsius</label>
+                <input type="number" name="c" id="celsius">
+            </div>
+
+            <!--Defini a célula de Graus kelvin-->
+            <div>
+                <label for="kelvin">Graus kelvin</label>
+                <input type="number" name="k" id="kelvin">
+            </div>
+
+            <!--Defini a célula de Graus fahrenheit-->
+            <div>
+                <label for="fahrenheit">Graus fahrenheit</label>
+                <input type="number" name="f" id="fahrenheit">
+            </div>
+
+             <!--Defini um botão eum alerta-->
+            <button type="button" onclick="alert('Certifique que adicionou SÓ a temperatura que deseja converter.')" id="calcular">Calcule</button>
+            
+        </form>
+
+             <!--Resultado-->
+            <div>
+                <h2>Resultados</h2>
+                <p id="Resultadocelcius"></p>
+                <p id="Resultadokelvin"></p>
+                <p id="Resultadofahrenheit"></p>
+            </div>
+    </div>
+</body>
+</html>

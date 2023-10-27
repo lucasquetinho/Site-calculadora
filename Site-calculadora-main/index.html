@@ -1,0 +1,47 @@
+ <!DOCTYPE html> <!--Defini em qual versão do html o site foi feito-->
+<html lang="pt-br"> <!--Defini o idioma do site para português-->
+<head>
+    <meta charset="UTF-8"> <!--Defini o tipo carácter utilizado-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Epecífica a escala da página-->
+    <title>Conversor de temperaturas</title> <!--Título-->
+    <link rel="stylesheet" href="style.css"> <!--Faz um link com o CSS-->
+    <script src="myscripts.js"></script> <!--Faz um "link" com o Java-->
+</head>
+<body>
+    <div>
+        <h1>Conversor de temperaturas</h1> <!--Título do Programa-->
+        <form action="#" method="post" id="formulario"> <!--Início do Formulário-->
+
+            <!--Defini a célula de Graus celsius-->   
+            <div>
+                <label for="celsius">Graus celsius</label>
+                <input type="number" name="c" id="celsius">
+            </div>
+
+            <!--Defini a célula de Graus kelvin-->
+            <div>
+                <label for="kelvin">Graus kelvin</label>
+                <input type="number" name="k" id="kelvin">
+            </div>
+
+            <!--Defini a célula de Graus fahrenheit-->
+            <div>
+                <label for="fahrenheit">Graus fahrenheit</label>
+                <input type="number" name="f" id="fahrenheit">
+            </div>
+
+             <!--Defini um botão eum alerta-->
+            <button type="button" onclick="alert('Certifique que adicionou apenas a temperatura que deseja converter.')" id="Converter">Converter</button>
+            
+        </form>
+
+             <!--Resultados-->
+            <div class="ResultadosTudo">
+                <h2>Resultados:</h2>
+                <p class="Resultados" id="ResultadoGrausCelcius"></p>
+                <p class="Resultados" id="ResultadoGrausKelvin"></p>
+                <p class="Resultados" id="ResultadoGrausFahrenheit"></p>
+            </div>
+    </div>
+</body>
+</html>
